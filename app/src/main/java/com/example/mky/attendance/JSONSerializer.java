@@ -17,12 +17,12 @@ import org.json.JSONTokener;
 
 import android.content.Context;
 
-public class CriminalIntentJSONSerializer {
+public class JSONSerializer {
 
     private Context mContext;
     private String mFilename;
 
-    public CriminalIntentJSONSerializer(Context c, String f) {
+    public JSONSerializer(Context c, String f) {
         mContext = c;
         mFilename = f;
     }

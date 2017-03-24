@@ -4,7 +4,6 @@ package com.example.mky.attendance;
  * Created by mky on 6/18/2016.
  */
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.UUID;
 
 import android.content.Context;
@@ -16,7 +15,7 @@ public class AttendLab {
     private static final String TAG = "CrimeLab";
     private static final String FILENAME = "crimes.json";
    // private static final String pFILENAME="presentdates.json";
-    private CriminalIntentJSONSerializer mSerializer;
+    private JSONSerializer mSerializer;
    // private DatesJSONSerializer pSerializer;
 
 
@@ -25,7 +24,7 @@ public class AttendLab {
 
     private AttendLab(Context appContext) {
         mAppContext = appContext;
-        mSerializer = new CriminalIntentJSONSerializer(mAppContext, FILENAME);
+        mSerializer = new JSONSerializer(mAppContext, FILENAME);
      //   pSerializer= new DatesJSONSerializer(mAppContext,pFILENAME);
 
         try {
