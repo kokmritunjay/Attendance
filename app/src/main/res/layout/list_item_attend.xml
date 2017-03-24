@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_activated"
+
+    >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:padding="5dp"
+        />
+    <CheckBox android:id="@+id/crime_list_item_solvedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:focusable="false"
+        android:padding="4dp" />
+    <TextView android:id="@+id/crime_list_item_titleTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Crime title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton" />
+    <TextView android:id="@+id/crime_list_item_dateTextView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:text="Crime date"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/crime_list_item_titleTextView"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/present_text"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_below="@+id/crime_list_item_dateTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/absent_text"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/present_text"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/crime_list_item_dateTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/percentage_text"
+       android:layout_below="@+id/crime_list_item_dateTextView"
+        android:layout_toRightOf="@+id/absent_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"/>
+   <!-- <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/percentage_text"/>
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suggestion_text"
+        android:text="FWEFWEF_JBKJKJGJH"
+
+        android:layout_alignLeft="@+id/present_text"
+        android:layout_alignStart="@+id/present_text"
+        android:layout_below="@+id/present_text"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_dark"/>
+
+</RelativeLayout>
+
