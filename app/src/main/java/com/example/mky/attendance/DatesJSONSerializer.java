@@ -51,7 +51,6 @@ public class DatesJSONSerializer {
             }
         } catch (FileNotFoundException e) {
             // we will ignore this one, since it happens when we start fresh
-//start igno
         } finally {
             if (reader != null)
                 reader.close();
